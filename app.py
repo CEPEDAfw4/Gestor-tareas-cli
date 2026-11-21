@@ -3,6 +3,11 @@ tareas = []
 
 def agregar_tarea():
     nombre = input("Ingrese la tarea: ")
+
+    if nombre.strip() == "":
+        print("No se puede agregar una tarea vacia")
+        return
+
     tareas.append({"nombre" : nombre, "completada": False})
     print("Tarea agregada correctamente")
 
