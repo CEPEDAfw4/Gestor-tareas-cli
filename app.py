@@ -24,6 +24,17 @@ def completar_tarea():
         print("Tarea completada correctamente")
     else:
         print("Numero de tarea incorrecto")
+def eliminar_tarea():
+    listar_tareas()
+    if len(tareas) == 0:
+        return
+
+    numero = int(input("Numero de tarea a eliminar: "))
+    if 1 <= numero <= len(tareas):
+        tareas.pop(numero - 1)
+        print("Tarea eliminada correctamente")
+    else:
+        print("Numero de tarea incorrecto")
 
 
 def main():
@@ -43,6 +54,8 @@ def main():
             listar_tareas()
         elif opcion == "3":
             completar_tarea()
+        elif opcion == "4":
+            eliminar_tarea()
         elif opcion == "5":
             break
 
