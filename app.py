@@ -39,7 +39,7 @@ def eliminar_tarea():
 
 def main():
     while True:
-        print("====GESTOR DE TAREAS====")
+        print("====GESTOR DE TAREAS - VERSION DE PRUEBA ====")
         print("1. Agregar tarea")
         print("2. Lista de tareas")
         print("3. Completar tareas")
