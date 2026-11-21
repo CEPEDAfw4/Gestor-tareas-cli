@@ -6,6 +6,13 @@ def agregar_tarea():
     tareas.append(nombre)
     print("Tarea agregada correctamente")
 
+def listar_tareas():
+    print("==== LISTA DE TAREAS ====")
+    if len(tareas) == 0:
+        print("No hay tareas registradas")
+    else:
+        for tarea in tareas:
+            print(tarea)
 
 def main():
     print("====GESTOR DE TAREAS====")
@@ -18,7 +25,8 @@ def main():
     opcion = input("Seleccione una opcion: ")
     if opcion == "1":
         agregar_tarea()
-   
+    elif opcion == "2":
+        listar_tareas()
 
 
 if __name__ == "__main__":
